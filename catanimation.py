@@ -12,7 +12,7 @@ pygame.display.set_caption('Animation')
 
 WHITE = (255, 255, 255)
 catImg = pygame.image.load('cat.png')
-catx = 10
+catx = 20
 caty = 10
 direction = 'right'
 
