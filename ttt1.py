@@ -1,6 +1,7 @@
 # Board is represented by an array with indexes from 0 to 0
 # each array element can contain values: ' ','X','O'
 def drawBoard(board):
+    print(board)
     print("+---+---+---+")
     for i in range(3):
         print("| {} | {} | {} |".format(board[3*i],board[3*i+1],board[3*i+2]))
@@ -24,12 +25,17 @@ def checkIfWon(b,X_or_O):
         return True    
     return False
 
+#=====================================================================
+# Main program starts here
+#=====================================================================
 
-# Initialize the game
+# Initialize the global variables controlling the gamegame
 #  Reset the board with all ' ', set gameOver flag to False, player 'X' starts first
 myBoard = [' ']*9
 gameOver = False
 nowPlays = 'X' 
+
+# Draw initial (empty)
 drawBoard(myBoard)
 
 # Start the game and continue until someone wins or board is full
@@ -41,7 +47,6 @@ while (not gameOver):
     
     # Draw the board to display all the cells filled so far
     drawBoard(myBoard)
-    print(myBoard)
 
     # Check if the last move has won the game
     if (checkIfWon(myBoard,nowPlays)):
