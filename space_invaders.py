@@ -181,7 +181,7 @@ while True:
 			os.system("afplay explosion.wav&")
 			player.hideturtle()
 			enemy.hideturtle()
-			print ("Game Over")
+			print("Game Over")
 			break
 
 		
