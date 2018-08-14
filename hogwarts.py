@@ -11,7 +11,7 @@ harry.penup()
 harry.backward(300)
 harry.right(90)
 harry.forward(300)
-harry.left(180)
+harry.left(180) 
 
 # 2 towers
 for i in range(2):
